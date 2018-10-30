@@ -1,9 +1,11 @@
-<h1>Bienvenue sur The Gossip Project !</h1>
+
+<center> <font face="Chalkduster" 
+><h1> Bienvenue sur The Gossip Project !</h1>
 <br>
-<h3>Voici la liste des potins :</h3>
+<p>Voici la liste des potins :</p> </br>
 
 <% @gossips.each do |gossip| %>
-<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+<div class="card text-white bg-dark mb-3" style="max-width: 60rem;">
   <div class="card-header">Gossip n° <%= gossip.id %> </div>
   <div class="card-body">
     <h5 class="card-title"><%= gossip.content %></h5>
@@ -12,3 +14,5 @@
   </div>
 </div>
  <% end %>
+</font>
+</center>
